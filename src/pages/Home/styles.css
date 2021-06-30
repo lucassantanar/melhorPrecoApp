@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+  width: 60%;
+  height: 100vh;
+}
+
+aside {
+  width: 40%;
+  height: 100vh;
+}
+
+/* Estilização Aside */
+
+aside {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.conteudo-aside {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conteudo-aside > img {
+  width: 280px;
+}
+
+.texto-aside {
+  width: 280px;
+  text-align: center;
+}
+
+aside > img {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+/* Estilização Main*/
+
+main {
+  background: #bd00ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  min-width: 350px;
+  min-height: 420px;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 35px;
+  flex-direction: column;
+
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.login > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login > form > input {
+  height: 45px;
+  background: #f8f8f8;
+  border: 0.5px solid #bd00ff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.separador {
+  font-size: 14px;
+  color: #81759f;
+  display: flex;
+  align-items: center;
+}
+
+.separador::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #81759f;
+  margin-right: 16px;
+}
+
+.separador::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #81759f;
+  margin-left: 16px;
+}
+
+.lembrar-usuario {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #a8a8b3;
+  cursor: pointer;
+}
+
+.lembrar-usuario-ativado {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #a8a8b3;
+  cursor: pointer;
+}
+
+.lembrar-usuario-ativado > svg {
+  color: #bd00ff;
+  cursor: pointer;
+}
+
+.lembrar-usuario > img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Estilização botão google */
+
+.criar-conta {
+  height: 55px;
+
+  background: #f8f8f8;
+  color: #000000;
+  border: 0.3px solid #ff0000;
+  box-sizing: border-box;
+  filter: blur(0.5px);
+  border-radius: 30px;
+}
+
+.criar-conta > img {
+  width: 25px;
+  height: 25px;
+}
